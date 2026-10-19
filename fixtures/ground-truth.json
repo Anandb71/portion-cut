@@ -1,0 +1,239 @@
+{
+  "book": {
+    "title": "Introduction to Python Programming (OpenStax, 2024)",
+    "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf",
+    "license": "CC BY-NC-SA 4.0 per openstax.org (the 2024 PDF front matter says CC BY 4.0)",
+    "pages": 397
+  },
+  "method": "Labelled by hand from the book's table of contents and a text search of the PDF, before running the model. 'required' sections are where a student must read for that syllabus line. 'acceptable' sections are related enough that reading them is not wasted. A null list means the book does not cover the line. Each chapter's summary section counts as acceptable for topics in that chapter (added after the first run, because summary pages are a reasonable thing to revise from).",
+  "portions": {
+    "cat1": {
+      "file": "portion-cat1.txt",
+      "topics": [
+        {
+          "match": "if, if-else",
+          "required": [
+            "4.2",
+            "4.5",
+            "4.6"
+          ],
+          "acceptable": [
+            "4.1",
+            "4.3",
+            "4.4",
+            "4.7",
+            "4.8"
+          ]
+        },
+        {
+          "match": "Looping",
+          "required": [
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.5"
+          ],
+          "acceptable": [
+            "5.4",
+            "5.6"
+          ]
+        },
+        {
+          "match": "break, continue",
+          "required": [
+            "5.4"
+          ],
+          "acceptable": [
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.5",
+            "5.6"
+          ]
+        },
+        {
+          "match": "List:",
+          "required": [
+            "3.4",
+            "9.1",
+            "9.2",
+            "9.3",
+            "9.5"
+          ],
+          "acceptable": [
+            "9.4",
+            "8.2",
+            "3.5",
+            "3.6",
+            "8.6",
+            "9.6"
+          ]
+        },
+        {
+          "match": "Tuples:",
+          "required": [
+            "3.5"
+          ],
+          "acceptable": [
+            "3.4",
+            "9.1",
+            "9.3",
+            "3.6",
+            "9.6"
+          ]
+        },
+        {
+          "match": "Dictionary:",
+          "required": [
+            "10.1",
+            "10.2",
+            "10.3"
+          ],
+          "acceptable": [
+            "10.4",
+            "10.5",
+            "10.6"
+          ]
+        },
+        {
+          "match": "Sets:",
+          "required": null,
+          "acceptable": []
+        },
+        {
+          "match": "String:",
+          "required": [
+            "8.1",
+            "8.2",
+            "8.4",
+            "8.5"
+          ],
+          "acceptable": [
+            "1.4",
+            "3.1",
+            "3.2",
+            "8.3",
+            "1.9",
+            "3.6",
+            "8.6"
+          ]
+        },
+        {
+          "match": "Regular expressions",
+          "required": null,
+          "acceptable": [
+            "8.3",
+            "8.6"
+          ]
+        }
+      ]
+    },
+    "cat2": {
+      "file": "portion-cat2.txt",
+      "topics": [
+        {
+          "match": "Functions: Parameters",
+          "required": [
+            "6.4",
+            "6.6"
+          ],
+          "acceptable": [
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.5",
+            "6.7"
+          ]
+        },
+        {
+          "match": "Local and Global",
+          "required": [
+            "6.3"
+          ],
+          "acceptable": [
+            "6.1",
+            "6.2",
+            "6.4",
+            "6.7"
+          ]
+        },
+        {
+          "match": "arbitrary",
+          "required": null,
+          "acceptable": [
+            "6.4",
+            "6.6",
+            "6.7"
+          ]
+        },
+        {
+          "match": "Recursive",
+          "required": [
+            "12.1",
+            "12.2",
+            "12.3",
+            "12.4",
+            "12.5"
+          ],
+          "acceptable": [
+            "6.1",
+            "6.5",
+            "6.7",
+            "12.6"
+          ]
+        },
+        {
+          "match": "Files:",
+          "required": [
+            "14.1",
+            "14.2"
+          ],
+          "acceptable": [
+            "14.3",
+            "14.6"
+          ]
+        },
+        {
+          "match": "Built-in modules",
+          "required": [
+            "7.1",
+            "2.6"
+          ],
+          "acceptable": [
+            "7.2",
+            "7.4",
+            "7.5",
+            "2.9",
+            "7.6"
+          ]
+        },
+        {
+          "match": "User defined modules",
+          "required": [
+            "7.1",
+            "7.2"
+          ],
+          "acceptable": [
+            "7.3",
+            "7.5",
+            "11.5",
+            "7.6"
+          ]
+        },
+        {
+          "match": "Numpy and Pandas",
+          "required": [
+            "15.2",
+            "15.3"
+          ],
+          "acceptable": [
+            "15.1",
+            "15.4",
+            "15.5",
+            "15.6"
+          ]
+        }
+      ]
+    }
+  }
+}

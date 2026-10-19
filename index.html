@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Paste your exam portion, drop the textbook PDF, and read only the pages that matter. EmbeddingGemma runs on your device." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Portion Cut</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">✂</span>
+          <div>
+            <h1>Portion Cut</h1>
+            <p class="tag">Paste the exam portion. Drop the textbook. Read only the pages that matter.</p>
+          </div>
+        </div>
+        <p class="local" id="local">Runs on this device. <span id="net">Network requests after the model loaded: <strong id="net-count">–</strong></span></p>
+      </header>
+
+      <p class="demo" id="demo" hidden>
+        Demo mode. Page vectors for the sample book and sample portions were computed earlier by the same model and are loaded from a file, so nothing large downloads. Drop your own PDF without <code>?demo=1</code> to run the model for real.
+      </p>
+
+      <section class="card" aria-labelledby="book-h">
+        <h2 id="book-h"><span class="step">1</span> Textbook PDF</h2>
+        <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a textbook PDF">
+          <p id="book-copy">Drop a PDF here or <u>choose a file</u>. It is read in this tab and never uploaded.</p>
+        </div>
+        <input type="file" id="file" accept="application/pdf,.pdf" hidden />
+        <p class="hint" id="book-info"></p>
+      </section>
+
+      <section class="card" aria-labelledby="portion-h">
+        <h2 id="portion-h"><span class="step">2</span> Your portion</h2>
+        <p class="hint">One topic per line, the way the syllabus lists it. Module headings are fine.</p>
+        <textarea id="portion" rows="10" spellcheck="false" placeholder="Module 3: Control Structure&#10;- if, if-else, nested if, multiway elif&#10;- Looping: while, for loop, nested loop"></textarea>
+        <div class="row">
+          <button type="button" class="ghost" id="sample1">Sample: Modules 3–5</button>
+          <button type="button" class="ghost" id="sample2">Sample: Modules 6–7</button>
+        </div>
+      </section>
+
+      <section class="card go" aria-labelledby="go-h">
+        <h2 id="go-h" class="sr">Cut</h2>
+        <button type="button" id="cut" class="primary" disabled>Cut my portion</button>
+        <div class="progress" id="progress" hidden>
+          <div class="bar"><span id="bar"></span></div>
+          <p id="progress-text" aria-live="polite"></p>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card results" id="results" hidden aria-labelledby="res-h">
+        <h2 id="res-h">Your reading list</h2>
+        <p class="summary" id="summary"></p>
+        <ol class="topics" id="topics"></ol>
+        <div class="row">
+          <button type="button" class="primary" id="download">Download the cut PDF</button>
+          <button type="button" class="ghost" id="copy">Copy reading list</button>
+        </div>
+        <p class="hint" id="download-note"></p>
+      </section>
+
+      <footer class="foot">
+        <p>
+          Matching uses <a href="https://huggingface.co/google/embeddinggemma-300m">EmbeddingGemma 300M</a>, an open-weight model from Google, through
+          <a href="https://huggingface.co/docs/transformers.js">Transformers.js</a>. The model downloads once (about 220 MB) and is cached by the browser.
+          Sample book: <a href="https://openstax.org/details/books/introduction-python-programming">Introduction to Python Programming</a>, OpenStax.
+          <a href="https://github.com/Anandb71/portion-cut">Source on GitHub</a>.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

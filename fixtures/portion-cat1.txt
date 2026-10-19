@@ -1,0 +1,12 @@
+- Module_3: **Control Structure**
+  - if, if-else, nested if, multiway elif
+  - Looping: while, while-else, for loop, nested loop
+  - break, continue, pass
+- Module_4: **Collections**
+  - List: create, access, slicing, negative indices, list methods, list comprehensions
+  - Tuples: create, indexing, slicing, operations on tuples
+  - Dictionary: create, add, and replace values, operations on dictionaries
+  - Sets: creation and operation
+- Module_5: **Strings and Regular Expressions**
+  - String: comparision, formatting, slicing, splitting, stripping
+  - Regular expressions: matching, search and replace, patterns

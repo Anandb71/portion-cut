@@ -1,0 +1,10 @@
+- Module_6: **Functions and Files**
+  - Functions: Parameters and Arguements: postional arguements, keyword arguements, paramaters with default values
+  - Local and Global scope of variable
+  - Functions with arbitrary arguements
+  - Recursive functions - Lambda function
+  - Files: create, open, read, write, append, close, tell and seek methods
+- Module_7: **Modules and Packages**
+  - Built-in modules
+  - User defined modules
+  - Overview of Numpy and Pandas packages

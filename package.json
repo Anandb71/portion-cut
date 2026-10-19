@@ -1,0 +1,27 @@
+{
+  "name": "portioncut",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "embed:book": "tsx scripts/embed-book.ts",
+    "eval": "tsx scripts/eval.ts",
+    "demo:data": "tsx scripts/demo-data.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.6.205"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.43.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  }
+}
